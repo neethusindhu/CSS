@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="csssexam3.css">
+  <title>lab3</title>
+  <style type="text/css">
+    body{
+      margin:0;
+    }
+    .outerbox{
+      background-color: #FFF;
+      width: 100%;
+      height: 100vh;
+    }
+    .box1{
+      float: left;
+      background-image: linear-gradient(#ACA7BD,#CDB6B0);
+      width: 50%;
+      height: 100vh;
+      margin: 0;
+    }
+    .box2{
+      float: left;
+      background-color: #FFF; 
+      width: 50%;
+      height: 100vh;
+    }
+
+    h1{
+      color: #F00;
+    }
+    form{
+      padding: 40px;
+      line-height: 40px;
+      font-family: sans-serif;
+      /font-style: italic;/
+      /font-weight: bold;/
+    }
+    label{
+      font-weight: bold;
+    }
+    input{
+      height: 40px;
+      width: 100%;
+    }
+
+    input[type="checkbox"]{ 
+      margin:20px -10px 0 -10px; 
+      height: 15px;
+      width: 50px;
+    }
+
+    input[type="submit"]{
+      height: 40px;
+      width: 100%;
+      background-color: #F00;
+
+      outline: 1px solid #F00;
+      border:2px solid #F00;
+
+      color: #FFF;
+      padding: 10px 20px;
+    }
+@media only screen and (max-width: 600px){
+
+    body{
+      margin:0;
+    }
+/*    .outerbox{
+      background-color: #FFF;
+      width:100%;
+      height:100vh;
+    }*/
+    .box1{
+      background-image: none;
+      width: 0%;
+      height: 0vh;
+    }
+    .box2{
+      background-color: #FFF; 
+      width: 100%;
+      height: 100vh;
+    }
+    h1{
+      color: #F00;
+    }
+    form{
+      padding: 40px;
+      line-height: 40px;
+      font-family: sans-serif;
+    }
+    label{
+      font-weight: bold;
+    }
+    input{
+      height: 40px;
+      width: 100%;
+    }
+
+    input[type="checkbox"]{ 
+      margin:20px -10px 0 -10px; 
+      height: 15px;
+      width: 50px;
+    }
+
+    input[type="submit"]{
+      height: 40px;
+      width: 100%;
+      background-color: #F00;
+      outline: 1px solid #F00;
+      border:2px solid #F00;
+      color: #FFF;
+      padding: 10px 20px;
+    }
+
+  }
+  </style>
+</head>
+<body>
+  <div class=outerbox>
+    <div class=box1></div>
+    <div class=box2>
+    <form>
+      <h1>Login Form</h1>
+      <div class="box">
+        <label for="mail">Email :</label><br>
+          <input type="email" name="email" id="mail" required>
+      </div>
+      <div class="box">
+        <label for="pword">Password :</label><br>
+          <input type="Password" name="pass" id="pword" required>
+      </div>
+      <div class="tickbox">
+        <input type="checkbox" name="Remember Me">Remember Me 
+      </div>
+      <div class="button">
+        <input type="submit" value=Login>
+      </div>
+
+    </form>
+    </div>
+    
+  </div>
+
+</body>
+</html>
